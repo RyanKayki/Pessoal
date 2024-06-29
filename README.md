@@ -1,44 +1,60 @@
-# Documentação do Projeto PAPELARIA RABISCO
+# Documentação do Projeto PORTFÓLIO PESSOAL
 
 ## Descrição do Projeto
 
-A empresa "Papelaria Rabisco" necessita de um sistema para gerenciar seu estoque de produtos. Este sistema permitirá o cadastro de novos produtos, a alteração de quantidade e preço, a listagem de todos os produtos cadastrados e a exclusão de produtos do estoque.
+Este projeto tem como objetivo criar um portfólio pessoal para exibir minhas habilidades, projetos e experiências na área de desenvolvimento web. O portfólio é responsivo e fácil de navegar, oferecendo uma visão detalhada do meu trabalho e das tecnologias que utilizo.
 
 ## Tecnologias Utilizadas
 
-- Python: Linguagem de programação.
-- MySQL: Banco de dados para armazenar as informações dos produtos.
-- GitHub: Plataforma online para hospedar o repositório do projeto e facilitar a colaboração.
-- ReactNext: Um framework popular baseado em React que permite renderização do lado do servidor,
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Next.js**: Framework React que permite renderização do lado do servidor e geração de sites estáticos.
+- **GitHub**: Plataforma online para hospedar o repositório do projeto e facilitar a colaboração.
+- **CSS/SCSS**: Estilização do site para torná-lo atraente e responsivo.
+- **Vercel**: Plataforma de deployment para hospedar e servir o site.
 
 ## Funcionalidades Principais
 
-O sistema possui as seguintes funcionalidades:
+O portfólio possui as seguintes funcionalidades:
 
-- **Cadastro de Produto**: Permite adicionar novos produtos ao estoque da papelaria, incluindo nome, descrição, preço e quantidade.
-- **Alteração de Quantidade**: Permite modificar a quantidade disponível de um produto no estoque.
-- **Alteração de Preço**: Permite alterar o preço de um produto cadastrado.
-- **Listagem de Produtos**: Mostra todos os produtos cadastrados na papelaria.
-- **Exclusão de Produto**: Remove um produto do estoque da papelaria.
+- **Home**: Página inicial com uma breve introdução e links para as principais seções do portfólio.
+- **Sobre Mim**: Página detalhando minhas habilidades, experiência e educação.
+- **Projetos**: Galeria dos meus projetos com descrições, tecnologias utilizadas e links para o código-fonte e demos ao vivo.
+- **Blog**: Seção com artigos e posts relacionados a desenvolvimento web e outras áreas de interesse.
+- **Contato**: Formulário para entrar em contato comigo diretamente pelo site.
 
 ## Instruções de Configuração
 
 Para configurar e executar o projeto em sua máquina local, siga estas etapas:
 
-1. **Banco de Dados**:
-    - Crie um banco de dados MySQL com o nome "Papelaria".
-    - Execute o script SQL fornecido para criar a tabela "Produto".
-2. **Código-fonte**:
-    - Baixe o código-fonte do projeto.
-    - Certifique-se de ter o Python instalado em sua máquina.
-3. **Dependências**:
-    - Instale o conector MySQL para Python.
-4. **Execução**:
-    - Execute o arquivo `Rabisco.py` para iniciar o sistema.
+1. **Código-fonte**:
+    - Clone o repositório do projeto do GitHub:
+      ```bash
+      git clone https://github.com/ryankayki/portfolio-pessoal.git
+      ```
+    - Navegue até o diretório do projeto:
+      ```bash
+      cd portfolio-pessoal
+      ```
+2. **Dependências**:
+    - Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
+    - Instale as dependências do projeto:
+      ```bash
+      npm install
+      ```
+3. **Execução**:
+    - Inicie o servidor de desenvolvimento:
+      ```bash
+      npm run dev
+      ```
+    - Abra o navegador e acesse `http://localhost:3000` para visualizar o portfólio.
 
 ## Estrutura do Projeto
 
-- `Rabisco.py`: Contém o código-fonte principal do sistema.
+- `pages`: Contém as páginas principais do portfólio.
+- `components`: Componentes reutilizáveis utilizados nas páginas.
+- `styles`: Arquivos de estilização (CSS/SCSS) do projeto.
+- `public`: Arquivos estáticos, como imagens e ícones.
+- `next.config.js`: Configurações do Next.js.
 
 ## Licença
 
@@ -51,9 +67,6 @@ Contribuições são bem-vindas. Sinta-se à vontade para fazer um fork do repos
 ## Contato
 
 - Autor do Projeto: Ryan Kayki
+- E-mail: Ryan.santos.senai@gmail.com
 
-- Instrutor de Programação Web Front-End: Rafael Ribas
-
-- Instrutor de Programação Web Back-End: João Paulo
-
-© 2024 Papelaria Rabisco
+© 2024 Ryan Kayki
