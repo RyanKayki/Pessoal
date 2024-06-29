@@ -1,13 +1,15 @@
-import Titulo from '@/components/Titulo'
-import Headerb from '../components/Headerb'
-import Carrossel from '../components/Carrossel'
+import Header from '@/components/Header'
+import Bio from '../components/Bio'
+import Gallery from '../components/Gallery'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
     <>
-      <Headerb />
-      <Titulo texto="Bem vindo à papelaria Rabisco!"/>
-      <Carrossel />
+      <Header />
+      <Bio />
+      <Gallery />
+      <Contact />
     </>
   )
 }

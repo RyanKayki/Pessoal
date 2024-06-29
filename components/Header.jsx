@@ -1,34 +1,13 @@
-import Link from 'next/link'
-import styles from '../styles/Header.module.css'
+const Header = () => (
+  <>
+    <header className="header">
+      <div>
+        <h1 className="fade-in" style={{ animationDelay: '0.2s' }}>Meu Nome é</h1>
+        <h1 className="fade-in" style={{ paddingLeft: '100px', animationDelay: '0.4s' }}><strong>Ryan Kayki</strong></h1>
+        <p className="fade-in" style={{ paddingLeft: '100px', animationDelay: '0.6s' }}>Sou Programador Full-Stack</p>
+      </div>
+    </header>
+  </>
+);
 
-export default function Header(props) {
-    let tamanho
-    if(props.size=="big"){
-        tamanho = "22pt"
-    }else{
-        tamanho = "16pt"
-    }
-    return (
-        <header className={styles.header} style={{
-            backgroundColor:props.bgcolor
-        }} >
-            <aside className={styles.aside}>
-                <img src="logo/logo2.png" className={styles.img}/>
-                <nav className={styles.nav}>
-                    <Link href="/" className={styles.a}>
-                        Home
-                    </Link>
-                    <Link href="/produtos" className={styles.a}>
-                        Produtos
-                    </Link>
-                    <Link href="/contato" className={styles.a}>
-                        Contato
-                    </Link>
-                </nav>
-            </aside>
-            <h1 style={{
-                fontSize:tamanho
-            }}>{props.title}</h1>
-        </header>
-    )
-}
+export default Header;

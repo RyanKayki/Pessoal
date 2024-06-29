@@ -1,10 +1,263 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* styles/globals.css */
+body {
+  background-color: #eff;
 }
 
-a{
-  color: inherit;
+/* header */
+.header {
+  background-image: url(https://files.tecnoblog.net/wp-content/uploads/2019/08/work-731198_1280-1060x706.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  padding: 40px;
+  backdrop-filter: opacity(20%);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1; /* Para garantir que o texto fique acima do fundo desfocado */
+}
+
+.header h1 {
+  font-size: 7rem; /* Tamanho de fonte ajustável conforme necessário */
+}
+.header p {
+  font-size: 5rem; /* Tamanho de fonte ajustável conforme necessário */
+}
+
+.header nav {
+  margin-top: 20px; /* Espaçamento superior para o menu de navegação */
+}
+
+.header a {
+  color: #fff;
   text-decoration: none;
+  margin: 0 10px;
+}
+/* fim da header */
+
+/* body */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  padding: 20px;
+}
+
+img {
+  width: 70%;
+  height: auto;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona a sombra às imagens */
+}
+
+.me {
+  display: flex;
+  background-color: #ddd;
+}
+
+.more {
+  width: 40%;
+  padding: 10px;
+}
+
+.more p {
+  font-size: 20px;
+  color: #555;
+}
+
+/* scrool */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000; /*Aqui você altera a cor do fundo do scroll*/
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #202020; /*Aqui você altera a cor do scroll*/
+  border-radius: 10px;
+  border: 2px solid #202020; /*Aqui você altera a cor da borda do scroll*/
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 10%;
+}
+.projetos img {
+  transition: transform 0.3s ease;
+  height: 160px;
+  width: 100%;
+}
+
+.projetos img:hover {
+  transform: scale(1.05);
+}
+
+#gallery h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* CONTATO */
+.contatoInfo {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+}
+
+.contatoInfo h2 {
+  color: #7B1FA2;
+  text-align: center;
+}
+
+.contatoInfo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contatoInfo li {
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.contatoInfo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contatoInfo a:hover {
+  text-decoration: underline;
+}
+.card {
+  max-width: 100px; /* Ajuste o tamanho máximo do card */
+  margin: 0 auto; /* Centraliza o card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efeito ao passar o mouse */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.container {
+  padding: 2rem 0;
+}
+/* FIM DO CONTATOS */
+
+/* HEADER */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+/* HEADER */
+
+/* SOBRE */
+#about {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#about.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* SOBRE */
+
+/* projetos */
+#gallery {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#gallery.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+.container2 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info {
+  text-align: left;
+}
+
+.details {
+  width: 400px;
+  text-align: left;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.contact {
+  padding: 10px 20px;
+  background-color: #1b033a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.social {
+  display: flex;
 }
