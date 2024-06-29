@@ -22,7 +22,7 @@ function Contact() {
       <div className="details">
         <div className="section">
           <h3>Redes Sociais:</h3>
-          <p>Técnico De Hardware e Programador Full-Stack</p>
+          <p>Técnico De Hardware e Programador Full-Stack.</p>
         </div>
         <div className="social">
           <a href="https://www.instagram.com/ryan.kpssz/" target="_blank" rel="noopener noreferrer"><BsInstagram style={iconStyle} /></a>
