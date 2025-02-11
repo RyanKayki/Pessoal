@@ -13,7 +13,6 @@ function Contact() {
   return (
     <div className="container2">
       <div className="profile">
-        <img src="/eu/eu.png" alt="Minha Foto" />
         <div className="info">
           <h2>Esse fui eu, Obrigado por me conhecer 👋</h2>
           <h3>Desenvolvimento De Sistemas</h3>

@@ -12,12 +12,14 @@ const Gallery = () => {
       <h2 style={{ textAlign: 'center', paddingBottom: '40px' }}>Meus Projetos</h2>
       <div className="projetos">
         <a href="https://ryankayki.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
-          <img src="projetos/youtech.png" alt="Descrição da imagem 1" />
+          <img src="projetos/youtech.png" alt="Youtech" />
         </a>
         <a href="https://ryankayki.github.io/reclame-aqui/" target="_blank" rel="noopener noreferrer">
-          <img src="projetos/reclame.png" alt="Descrição da imagem 2" />
+          <img src="projetos/reclame.png" alt="Suporte" />
         </a>
-        <img src="projetos/rabisco.png" alt="Descrição da imagem 3" />
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="projetos/tec.png" alt="Tio Carlos Concerta" />
+        </a>
       </div>
     </section>
   );
