@@ -17,7 +17,9 @@ const Gallery = () => {
         <a href="https://ryankayki.github.io/reclame-aqui/" target="_blank" rel="noopener noreferrer">
           <img src="projetos/reclame.png" alt="Suporte" />
         </a>
-          <img src="projetos/tec.png" alt="Tio Carlos Concerta" />
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="projetos/Manutencao.png" alt="Tio Carlos Concerta" />
+        </a>
       </div>
     </section>
   );
