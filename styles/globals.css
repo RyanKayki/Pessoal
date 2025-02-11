@@ -207,4 +207,10 @@ section {
   .photo-me {
     height: 20%;
   }
+  .header h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }

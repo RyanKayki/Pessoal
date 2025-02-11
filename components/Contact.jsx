@@ -14,7 +14,7 @@ function Contact() {
     <div className="container2">
       <div className="profile">
         <div className="info">
-          <h2>Esse fui eu, Obrigado por me conhecer 👋</h2>
+          <h2>Esse sou eu, Obrigado por me conhecer 👋</h2>
           <h3>Desenvolvimento De Sistemas</h3>
         </div>
       </div>
