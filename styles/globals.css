@@ -11,8 +11,8 @@ body {
   background-image: url(../public/logo/background.png);
   color: #fff;
   overflow-x: hidden;
+  max-width: 100vw;
 }
-
 /* barra de rolagem */
 ::-webkit-scrollbar {
   width: 12px;
@@ -294,6 +294,7 @@ section#gallery .titulo span {
     flex-direction: column;
     text-align: center;
     gap: 15px;
+    padding: 20px;
   }
 
   .me img {
