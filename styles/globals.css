@@ -273,6 +273,10 @@ section#gallery .titulo span {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   .header {
     padding: 20px;
     height: 80vh;
@@ -314,6 +318,10 @@ section#gallery .titulo span {
 
 /* Ajustes para telas menores que 555px */
 @media (max-width: 555px) {
+  body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   .header {
     height: auto;
     min-height: 70vh;
