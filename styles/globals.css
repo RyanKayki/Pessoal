@@ -304,8 +304,8 @@ section#gallery .titulo span {
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-align: justify;
   }
-  .stack-item {
-    padding: 3px;
+  .stack-item img {
+    height: 30em;
   }
   .projetos {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -331,8 +331,8 @@ section#gallery .titulo span {
   .me img {
     max-width: 300px;
   }
-  .stack-item {
-    padding: 3px;
+  .stack-item img {
+    height: 30em;
   }
   .projetos {
     grid-template-columns: 1fr;
