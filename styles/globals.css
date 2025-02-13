@@ -281,36 +281,32 @@ section#gallery .titulo span {
     padding: 20px;
     height: 80vh;
   }
-
   .header h1 {
     font-size: clamp(2rem, 8vw, 3rem);
   }
-
   .header p {
     font-size: clamp(1rem, 4vw, 1.5rem);
   }
-
   section {
     padding: 40px 5%;
   }
-
   .me {
     flex-direction: column;
     text-align: center;
     gap: 15px;
     padding: 20px;
   }
-
   .me img {
     width: 90%;
     max-width: 350px;
   }
-
   .more {
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-align: justify;
   }
-
+  .stack-item {
+    padding: 3px;
+  }
   .projetos {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -326,24 +322,22 @@ section#gallery .titulo span {
     height: auto;
     min-height: 70vh;
   }
-
   .header h1 {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
   }
-
   .header p {
     font-size: clamp(1rem, 3.5vw, 1.2rem);
   }
-
   .me img {
     max-width: 300px;
   }
-
+  .stack-item {
+    padding: 3px;
+  }
   .projetos {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-
   .projetos img {
     width: 100%;
     height: auto;
