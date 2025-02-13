@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(../public/logo/back.png);
+  background-image: url(../public/logo/background.png);
   color: #fff;
   overflow-x: hidden;
 }
