@@ -5,9 +5,9 @@ import { BsInstagram } from "react-icons/bs";
 
 function Contact() {
   const iconStyle = {
-    fontSize: '2.5rem', // Tamanho dos ícones
-    color: '#FFF',      // Cor branca
-    marginRight: '10px', // Espaçamento à direita para separação dos ícones
+    fontSize: '2rem',
+    color: '#FFF',
+    marginRight: '10px',
   };
 
   return (

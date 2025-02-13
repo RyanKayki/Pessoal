@@ -1,4 +1,5 @@
-/* Reset básico para maior consistência */
+/* Globals.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,27 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
-
 body {
   background-image: url(../public/logo/background.png);
   color: #fff;
   overflow-x: hidden;
+}
+
+/* barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #333;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000; 
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 /* Header */
@@ -25,24 +42,23 @@ body {
   position: relative;
   padding: 40px;
 }
-
+header .fade-in span {
+  color: #f39c12;
+}
 .header-content {
   z-index: 2;
   animation: fadeIn 1.2s ease-in-out;
 }
-
 .header h1 {
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 .header p {
   font-size: 2rem;
   opacity: 0.8;
 }
-
 .header a {
   display: inline-block;
   padding: 12px 24px;
@@ -52,7 +68,6 @@ body {
   text-decoration: none;
   transition: all 0.3s;
 }
-
 .header a:hover {
   background: #fff;
   color: #000;
@@ -87,47 +102,120 @@ section {
   padding: 40px;
   border-radius: 10px;
 }
-
+section#about .titulo {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+section#about .titulo span {
+  color: #f39c12;
+}
 .me img {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
 }
-
 .more {
   max-width: 700px;
   text-align: left;
   line-height: 1.8;
   font-size: 1.2rem;
 }
-
 .more p {
   margin-bottom: 15px;
 }
-
 .more strong {
   display: block;
+  margin-bottom: 10px;
+}
+
+/* Stacks */
+.stacks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+section#stacks .titulo {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+section#stacks .titulo span {
+  color: #f39c12;
+}
+.stack-item {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+.stack-item:hover {
+  transform: scale(1.1);
+}
+.stack-icon {
+  width: 50px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
 /* Projetos */
 .projetos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
   gap: 20px;
-  padding: 40px 10%;
+  padding: 40px;
+  position: relative;
 }
-
+section#gallery .titulo {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+section#gallery .titulo span {
+  color: #f39c12;
+}
 .projetos img {
   width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .projetos img:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
 }
+.projetos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+.projetos a:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.projetos a img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.projetos a.em-breve {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 350px;
+  border-radius: 8px;
+  z-index: 0;
+}
+.projetos a.em-breve span {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+.projetos a.em-breve:hover span {
+  opacity: 1;
+} 
 
 /* Contato */
 .contatoInfo {
@@ -135,18 +223,15 @@ section {
   padding: 20px;
   border-radius: 8px;
 }
-
 .contatoInfo h2 {
   color: #f39c12;
   font-size: 2rem;
 }
-
 .contatoInfo a {
   color: #f39c12;
   text-decoration: none;
   transition: 0.3s;
 }
-
 .contatoInfo a:hover {
   text-decoration: underline;
   color: #fff;
@@ -164,25 +249,21 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
 .container2 .profile img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
 .container2 .info h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-
 .container2 .social a {
   display: inline-block;
   margin: 0 10px;
   transition: transform 0.3s ease;
 }
-
 .container2 .social a:hover {
   transform: scale(1.2);
 }
