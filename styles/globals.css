@@ -305,7 +305,7 @@ section#gallery .titulo span {
     text-align: justify;
   }
   .stack-item img {
-    height: 4em;
+    height: 3em;
   }
   .projetos {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -332,7 +332,7 @@ section#gallery .titulo span {
     max-width: 300px;
   }
   .stack-item img {
-    height: 4em;
+    height: 3em;
   }
   .projetos {
     grid-template-columns: 1fr;
